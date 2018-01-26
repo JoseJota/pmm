@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/MnuOpc1" android:title="Uno"></item>
+<item android:id="@+id/MnuOpc2" android:title="Dos"></item>
+<item android:id="@+id/MnuOpc3" android:title="Submenú">
+    <menu>
+        <item android:id="@+id/SubMnuOpc1"
+            android:title="Opcion 3.1" />
+        <item android:id="@+id/SubMnuOpc2"
+            android:title="Opcion 3.2" />
+    </menu>
+</item>
+    <item android:id="@+id/MnuOpc4" android:title="Cuatro"></item>
+
+
+</menu>
