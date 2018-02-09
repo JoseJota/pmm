@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#fffff676">
+
+    <TextView android:id="@+id/detalles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detalles del Pedido"
+        android:textSize="60px"
+        android:background="#fffff676" /> !--
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="#fff48736">
+        <TextView
+            android:text="BEBIDA :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:textColor="#000000" />
+        <TextView android:id="@+id/bebidaselect"
+            android:text="BEBIDA :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/preciobebibdaselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="#fff48736">
+        <TextView
+            android:text="VASO :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:textColor="#000000"/>
+        <TextView android:id="@+id/vasoselect"
+            android:text="VASO :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/preciovasoselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="#fff48736">
+        <TextView
+            android:text="EXTRAS :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.22"
+            android:textColor="#000000"/>
+        <TextView android:id="@+id/extraselect"
+            android:text="EXTRAS :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/precioextraselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff48736">
+        <TextView
+            android:text="TOTAL :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/totalpedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="#000000"
+        />
+
+
+    <TextView android:id="@+id/imagenbebida"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:background="#fff48736" />
+
+    <TextView
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:text="Volver al Menu"
+        android:id="@+id/textView"
+        android:layout_gravity="right"
+        android:textColor="#000000" />
+
+    <ImageButton
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:text="New Button"
+        android:id="@+id/botonvolver"
+        android:src="@drawable/icono"
+        android:layout_gravity="right"
+        android:background="#FFFFFF" />
+
+
+
+</LinearLayout>
