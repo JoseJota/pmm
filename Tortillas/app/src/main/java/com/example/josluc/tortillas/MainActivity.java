@@ -104,9 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Boton final para pasar
         botonpasar.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View view) {
-
 
                 String cantida = tvpizza.getText().toString();
                 float canti = Float.parseFloat(cantida);
@@ -203,6 +201,7 @@ public class MainActivity extends AppCompatActivity {
 
                 return extra;
             }
+
         });
     }
     private void showMessage(int message){
