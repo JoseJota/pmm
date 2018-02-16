@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Cursor cursor = sqLiteDatabase.query("variedad", columnaspedidos,null,null,null,null,null);
+        Cursor cursor = sqLiteDatabase.query("variedad", columnas,null,null,null,null,null);
 
         variedad = new Tortillas[cursor.getCount()];
 
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        //Boton final para pasar
         botonpasar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -173,10 +173,10 @@ public class MainActivity extends AppCompatActivity {
             public String envios() {
                 String x = "";
                 if (r1.isChecked() && contador % 2 != 0) {
-                    x = "En el local";
+                    x = "En local";
                     contador++;
                 } else if (r2.isChecked() && contador %2 == 0) {
-                    x = "Envio domicilio";
+                    x = "A domicilio";
                     contador++;
                 }else
                     contador++;
@@ -187,15 +187,15 @@ public class MainActivity extends AppCompatActivity {
 
             public String tipoExtra() {
                 if (ch1.isChecked() ) {
-                    extra = extra + "Salsa ";
+                    extra = extra + "Ketchup ";
 
                 }
                 if (ch2.isChecked()) {
-                    extra = extra + "Referesco ";
+                    extra = extra + "Mayonesa ";
 
                 }
                 if (ch3.isChecked() ) {
-                    extra = extra + "Patatas ";
+                    extra = extra + "Alioli ";
 
                 }else {
 

@@ -15,16 +15,16 @@ import android.widget.TextView;
 public class VariedadArrayAdapter extends ArrayAdapter<Tortillas> {
 
         Context context;
-        Tortillas[] sandwiches;
+        Tortillas[] tortillas;
         private TextView textViewPrecio, textViewNombre,textViewIngredientes,TVid;
         ImageView imageView ;
 
 
 
-        public VariedadArrayAdapter(Context context, Tortillas[] sandwiches) {
-            super(context, R.layout.spinner_helper, sandwiches);
+        public VariedadArrayAdapter(Context context, Tortillas[] tortillas) {
+            super(context, R.layout.spinner_helper, tortillas);
             this.context = context;
-            this.sandwiches= sandwiches ;
+            this.tortillas= tortillas ;
         }
 
         @Override
@@ -41,18 +41,18 @@ public class VariedadArrayAdapter extends ArrayAdapter<Tortillas> {
 
             imageView= view.findViewById(R.id.image);
 
-            String cast = Float.toString(sandwiches[position].getPrecio());
+            String cast = Float.toString(tortillas[position].getPrecio());
 
-            String cast2 = Integer.toString(sandwiches[position].getId());
+            String cast2 = Integer.toString(tortillas[position].getId());
 
 
 
             textViewPrecio.setText(cast);
-            textViewNombre.setText(sandwiches[position].getNombre());
-            textViewIngredientes.setText(sandwiches[position].getIngredientes());
+            textViewNombre.setText(tortillas[position].getNombre());
+            textViewIngredientes.setText(tortillas[position].getIngredientes());
 
 
-            switch (sandwiches[position].getId()){
+            switch (tortillas[position].getId()){
                 case 1:
                     imageView.setImageResource(R.drawable.francesa);
                     break;

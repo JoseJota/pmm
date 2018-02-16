@@ -10,7 +10,7 @@
     </ImageView>
 
     <TextView
-        android:id="@+id/row_sandwich"
+        android:id="@+id/row_tortilla"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -42,8 +42,8 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/row_sandwich"
-        android:layout_toRightOf="@+id/row_sandwich"
+        android:layout_toEndOf="@+id/row_tortilla"
+        android:layout_toRightOf="@+id/row_tortilla"
         android:gravity="right" />
 
     <TextView
@@ -51,8 +51,8 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/row_extras"
-        android:layout_toEndOf="@+id/row_sandwich"
-        android:layout_toRightOf="@+id/row_sandwich"
+        android:layout_toEndOf="@+id/row_tortilla"
+        android:layout_toRightOf="@+id/row_tortilla"
         android:gravity="right" />
 
     <TextView
