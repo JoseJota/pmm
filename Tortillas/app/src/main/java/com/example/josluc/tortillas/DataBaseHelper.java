@@ -15,20 +15,25 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         createTables(db);
+
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        createTables(db);
+        dropTables(db);
     }
     private void createTables(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE variedad (id INTEGER primary key autoincrement,nombre TEXT, ingredientes TEXT,precio INTEGER not null)");
-        db.execSQL("CREATE TABLE pedidos (id_food INTEGER primary key autoincrement,extras TEXT,tortilla TEXT,cantidad INTEGER not null,precio INTEGER not null,envio TEXT)");
+        db.execSQL("CREATE TABLE variedad (id INTEGER primary key,nombre TEXT, ingredientes TEXT,precio INTEGER not null)");
+        db.execSQL("CREATE TABLE pedidos (id_food INTEGER primary key,extras TEXT,tortilla TEXT,cantidad INTEGER not null,precio INTEGER not null,envio TEXT)");
 
         db.execSQL("INSERT INTO variedad (id,nombre, ingredientes,precio) VALUES (null,'Francesa','Sin patatas','3') ");
         db.execSQL("INSERT INTO variedad (id,nombre, ingredientes,precio) VALUES (null,'Con cebolla','Patatas/Cebolla','5') ");
         db.execSQL("INSERT INTO variedad (id,nombre, ingredientes,precio) VALUES (null,'Sin cebolla','Patatas','4') ");
 
+    }
 
+    private void dropTables(SQLiteDatabase db) {
+        db.execSQL("DROP TABLE IF EXISTS variedad");
+        db.execSQL("DROP TABLE IF EXISTS pedidos");
 
     }
 }
