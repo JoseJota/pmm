@@ -43,6 +43,7 @@ public class VariedadArrayAdapter extends ArrayAdapter<Tortillas> {
 
             String cast = Float.toString(tortillas[position].getPrecio());
 
+
             String cast2 = Integer.toString(tortillas[position].getId());
 
 

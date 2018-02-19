@@ -18,8 +18,6 @@ public class Tortillas implements Serializable {
         nombre = nom;
         precio = pre;
         ingredientes = ingr;
-
-
     }
 
 
@@ -40,5 +38,4 @@ public class Tortillas implements Serializable {
     public int getId() {
         return ids;
     }
-
 }
