@@ -133,20 +133,6 @@ public class Resultados extends ListActivity {
 
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
-        switch (item.getItemId()) {
-            case R.id.new_item:
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivityForResult(intent, NEW_ITEM);
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
-    @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
 
 

@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.example.josluc.tortillas.AcercaDe">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:text="Proyecto Tortillas por Jose Julián Pérez Lucas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
